@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\admin\Desktop\publicado pediatria 27 Nov" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Perfil1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="AddEditPadecimiento.aspx" publishTime="11/21/2012 11:17:54" />
+    <file relUrl="AddEditAnnales.aspx" publishTime="11/26/2012 16:12:48" />
+    <file relUrl="Productos.aspx" publishTime="11/20/2012 17:19:55" />
+    <file relUrl="Materiales.aspx" publishTime="11/20/2012 17:21:50" />
+    <file relUrl="AddEditArticulo.aspx" publishTime="11/21/2012 11:15:13" />
+    <file relUrl="AddEditUsuario.aspx" publishTime="11/21/2012 11:19:30" />
+    <file relUrl="Mostrar.aspx" publishTime="11/20/2012 15:48:14" />
+    <file relUrl="MenuDoctor.aspx" publishTime="11/20/2012 18:20:19" />
+    <file relUrl="AddEditPais.aspx" publishTime="11/21/2012 11:18:26" />
+    <file relUrl="AddEditPaciente.aspx" publishTime="11/21/2012 11:10:06" />
+    <file relUrl="Padecimientos.aspx" publishTime="11/20/2012 17:19:33" />
+    <file relUrl="MenuArticulos.aspx" publishTime="11/20/2012 17:17:42" />
+    <file relUrl="AddEditCita.aspx" publishTime="11/26/2012 17:52:30" />
+    <file relUrl="Meal.aspx" publishTime="11/20/2012 17:11:41" />
+    <file relUrl="MasterPage.Master" publishTime="11/26/2012 18:53:17" />
+    <file relUrl="AddEditCategoria.aspx" publishTime="11/21/2012 11:16:03" />
+    <file relUrl="AddEditProducto.aspx" publishTime="11/21/2012 11:18:54" />
+    <file relUrl="Nidito.aspx" publishTime="11/20/2012 17:35:53" />
+    <file relUrl="MenuVademecum.aspx" publishTime="11/20/2012 17:18:12" />
+    <file relUrl="Citas.aspx" publishTime="11/23/2012 17:50:16" />
+    <file relUrl="MenuSuperAdmin.aspx" publishTime="10/31/2012 15:56:13" />
+    <file relUrl="bin/NestlePediatria.dll" publishTime="11/27/2012 13:38:30" />
+    <file relUrl="Annales.aspx" publishTime="11/20/2012 17:48:01" />
+    <file relUrl="bin/Models.dll" publishTime="11/27/2012 10:32:09" />
+    <file relUrl="AddEditNidito.aspx" publishTime="11/21/2012 11:17:22" />
+    <file relUrl="bin/DataSource.dll" publishTime="11/27/2012 10:32:09" />
+    <file relUrl="Default.aspx" publishTime="11/20/2012 16:03:18" />
+    <file relUrl="bin/SQLHelpers.dll" publishTime="11/27/2012 10:32:26" />
+    <file relUrl="CitasDia.aspx" publishTime="11/26/2012 18:38:38" />
+    <file relUrl="bin/NestlePediatria.pdb" publishTime="11/27/2012 13:38:30" />
+    <file relUrl="Articulos.aspx" publishTime="11/20/2012 17:16:59" />
+    <file relUrl="Pacientes.aspx" publishTime="11/21/2012 17:19:04" />
+    <file relUrl="bin/DataAccess.dll" publishTime="11/27/2012 10:32:10" />
+    <file relUrl="Mealadd.aspx" publishTime="11/20/2012 17:11:20" />
+    <file relUrl="Web.config" publishTime="11/27/2012 13:33:07" />
+    <file relUrl="Categorias.aspx" publishTime="11/20/2012 16:36:34" />
+    <file relUrl="Paises.aspx" publishTime="11/20/2012 17:52:15" />
+    <file relUrl="AddEditEvento.aspx" publishTime="11/26/2012 18:54:25" />
+    <file relUrl="Eventos.aspx" publishTime="11/20/2012 17:17:16" />
+    <file relUrl="Usuarios.aspx" publishTime="11/26/2012 18:38:01" />
+    <file relUrl="AddEditMaterial.aspx" publishTime="11/21/2012 11:16:58" />
+  </publishProfile>
+</publishData>

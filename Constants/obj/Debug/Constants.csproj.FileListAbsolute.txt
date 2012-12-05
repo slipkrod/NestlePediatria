@@ -1,0 +1,5 @@
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\Constants\bin\Debug\Constants.dll
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\Constants\bin\Debug\Constants.pdb
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\Constants\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\Constants\obj\Debug\Constants.dll
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\Constants\obj\Debug\Constants.pdb

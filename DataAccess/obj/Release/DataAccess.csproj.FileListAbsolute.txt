@@ -1,0 +1,33 @@
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\bin\Release\DataAccess.dll
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\bin\Release\DataAccess.pdb
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\bin\Release\DataSource.dll
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\bin\Release\Models.dll
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\bin\Release\SQLHelpers.dll
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\bin\Release\DataSource.pdb
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\bin\Release\Models.pdb
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\bin\Release\SQLHelpers.pdb
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\obj\Release\ResolveAssemblyReference.cache
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\obj\Release\DataAccess.dll
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\obj\Release\DataAccess.pdb
+C:\Users\Rodrigo\Desktop\Nestle\NestlePediatria\DataAccess\bin\Release\DataAccess.dll
+C:\Users\Rodrigo\Desktop\Nestle\NestlePediatria\DataAccess\bin\Release\DataAccess.pdb
+C:\Users\Rodrigo\Desktop\Nestle\NestlePediatria\DataAccess\bin\Release\DataSource.dll
+C:\Users\Rodrigo\Desktop\Nestle\NestlePediatria\DataAccess\bin\Release\Models.dll
+C:\Users\Rodrigo\Desktop\Nestle\NestlePediatria\DataAccess\bin\Release\SQLHelpers.dll
+C:\Users\Rodrigo\Desktop\Nestle\NestlePediatria\DataAccess\bin\Release\DataSource.pdb
+C:\Users\Rodrigo\Desktop\Nestle\NestlePediatria\DataAccess\bin\Release\Models.pdb
+C:\Users\Rodrigo\Desktop\Nestle\NestlePediatria\DataAccess\bin\Release\SQLHelpers.pdb
+C:\Users\Rodrigo\Desktop\Nestle\NestlePediatria\DataAccess\obj\Release\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Rodrigo\Desktop\Nestle\NestlePediatria\DataAccess\obj\Release\DataAccess.dll
+C:\Users\Rodrigo\Desktop\Nestle\NestlePediatria\DataAccess\obj\Release\DataAccess.pdb
+D:\Rodrigo\_files\_rod\NestlePediatria\DataAccess\bin\Release\DataAccess.dll
+D:\Rodrigo\_files\_rod\NestlePediatria\DataAccess\bin\Release\DataAccess.pdb
+D:\Rodrigo\_files\_rod\NestlePediatria\DataAccess\bin\Release\DataSource.dll
+D:\Rodrigo\_files\_rod\NestlePediatria\DataAccess\bin\Release\Models.dll
+D:\Rodrigo\_files\_rod\NestlePediatria\DataAccess\bin\Release\SQLHelpers.dll
+D:\Rodrigo\_files\_rod\NestlePediatria\DataAccess\bin\Release\DataSource.pdb
+D:\Rodrigo\_files\_rod\NestlePediatria\DataAccess\bin\Release\Models.pdb
+D:\Rodrigo\_files\_rod\NestlePediatria\DataAccess\bin\Release\SQLHelpers.pdb
+D:\Rodrigo\_files\_rod\NestlePediatria\DataAccess\obj\Release\ResolveAssemblyReference.cache
+D:\Rodrigo\_files\_rod\NestlePediatria\DataAccess\obj\Release\DataAccess.dll
+D:\Rodrigo\_files\_rod\NestlePediatria\DataAccess\obj\Release\DataAccess.pdb

@@ -1,0 +1,750 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PruebaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="PruebaModelStoreContainer">
+    <EntitySet Name="annales" EntityType="PruebaModel.Store.annales" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="articulo" EntityType="PruebaModel.Store.articulo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="articulo_pais" EntityType="PruebaModel.Store.articulo_pais" store:Type="Tables" store:Schema="dbo" store:Name="articulo_pais">
+      <DefiningQuery>SELECT 
+      [articulo_pais].[articulo_id] AS [articulo_id], 
+      [articulo_pais].[pais_id] AS [pais_id]
+      FROM [dbo].[articulo_pais] AS [articulo_pais]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="categoria" EntityType="PruebaModel.Store.categoria" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cita" EntityType="PruebaModel.Store.cita" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ciudad" EntityType="PruebaModel.Store.ciudad" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="codigo" EntityType="PruebaModel.Store.codigo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="doctor" EntityType="PruebaModel.Store.doctor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="especialidad" EntityType="PruebaModel.Store.especialidad" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="estado" EntityType="PruebaModel.Store.estado" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="etapa" EntityType="PruebaModel.Store.etapa" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="etapa_pais" EntityType="PruebaModel.Store.etapa_pais" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="evento" EntityType="PruebaModel.Store.evento" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="evento_pais" EntityType="PruebaModel.Store.evento_pais" store:Type="Tables" store:Schema="dbo" store:Name="evento_pais">
+      <DefiningQuery>SELECT 
+      [evento_pais].[evento_id] AS [evento_id], 
+      [evento_pais].[pais_id] AS [pais_id]
+      FROM [dbo].[evento_pais] AS [evento_pais]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="material" EntityType="PruebaModel.Store.material" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="material_pais" EntityType="PruebaModel.Store.material_pais" store:Type="Tables" store:Schema="dbo" store:Name="material_pais">
+      <DefiningQuery>SELECT 
+      [material_pais].[material_id] AS [material_id], 
+      [material_pais].[pais_id] AS [pais_id]
+      FROM [dbo].[material_pais] AS [material_pais]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="nidito" EntityType="PruebaModel.Store.nidito" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="paciente" EntityType="PruebaModel.Store.paciente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="padecimiento" EntityType="PruebaModel.Store.padecimiento" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="pais" EntityType="PruebaModel.Store.pais" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="producto" EntityType="PruebaModel.Store.producto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="producto_pais" EntityType="PruebaModel.Store.producto_pais" store:Type="Tables" store:Schema="dbo" store:Name="producto_pais">
+      <DefiningQuery>SELECT 
+      [producto_pais].[producto_id] AS [producto_id], 
+      [producto_pais].[pais_id] AS [pais_id]
+      FROM [dbo].[producto_pais] AS [producto_pais]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="rol" EntityType="PruebaModel.Store.rol" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="subespecialidad" EntityType="PruebaModel.Store.subespecialidad" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="usuario" EntityType="PruebaModel.Store.usuario" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="usuario_pais" EntityType="PruebaModel.Store.usuario_pais" store:Type="Tables" store:Schema="dbo" store:Name="usuario_pais">
+      <DefiningQuery>SELECT 
+      [usuario_pais].[usuario_id] AS [usuario_id], 
+      [usuario_pais].[pais_id] AS [pais_id]
+      FROM [dbo].[usuario_pais] AS [usuario_pais]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_articulo_categoria" Association="PruebaModel.Store.FK_articulo_categoria">
+      <End Role="categoria" EntitySet="categoria" />
+      <End Role="articulo" EntitySet="articulo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_articulo_pais_articulo" Association="PruebaModel.Store.FK_articulo_pais_articulo">
+      <End Role="articulo" EntitySet="articulo" />
+      <End Role="articulo_pais" EntitySet="articulo_pais" />
+    </AssociationSet>
+    <AssociationSet Name="FK_articulo_pais_pais" Association="PruebaModel.Store.FK_articulo_pais_pais">
+      <End Role="pais" EntitySet="pais" />
+      <End Role="articulo_pais" EntitySet="articulo_pais" />
+    </AssociationSet>
+    <AssociationSet Name="FK_cita_paciente" Association="PruebaModel.Store.FK_cita_paciente">
+      <End Role="paciente" EntitySet="paciente" />
+      <End Role="cita" EntitySet="cita" />
+    </AssociationSet>
+    <AssociationSet Name="FK_doctor_ciudad" Association="PruebaModel.Store.FK_doctor_ciudad">
+      <End Role="ciudad" EntitySet="ciudad" />
+      <End Role="doctor" EntitySet="doctor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_doctor_especialidad" Association="PruebaModel.Store.FK_doctor_especialidad">
+      <End Role="especialidad" EntitySet="especialidad" />
+      <End Role="doctor" EntitySet="doctor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_doctor_estado" Association="PruebaModel.Store.FK_doctor_estado">
+      <End Role="estado" EntitySet="estado" />
+      <End Role="doctor" EntitySet="doctor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_doctor_subespecialidad" Association="PruebaModel.Store.FK_doctor_subespecialidad">
+      <End Role="subespecialidad" EntitySet="subespecialidad" />
+      <End Role="doctor" EntitySet="doctor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_doctor_usuario" Association="PruebaModel.Store.FK_doctor_usuario">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="doctor" EntitySet="doctor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_doctor_usuario1" Association="PruebaModel.Store.FK_doctor_usuario1">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="doctor" EntitySet="doctor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_etapa_pais_etapa" Association="PruebaModel.Store.FK_etapa_pais_etapa">
+      <End Role="etapa" EntitySet="etapa" />
+      <End Role="etapa_pais" EntitySet="etapa_pais" />
+    </AssociationSet>
+    <AssociationSet Name="FK_etapa_pais_pais" Association="PruebaModel.Store.FK_etapa_pais_pais">
+      <End Role="pais" EntitySet="pais" />
+      <End Role="etapa_pais" EntitySet="etapa_pais" />
+    </AssociationSet>
+    <AssociationSet Name="FK_evento_pais_evento1" Association="PruebaModel.Store.FK_evento_pais_evento1">
+      <End Role="evento" EntitySet="evento" />
+      <End Role="evento_pais" EntitySet="evento_pais" />
+    </AssociationSet>
+    <AssociationSet Name="FK_evento_pais_pais1" Association="PruebaModel.Store.FK_evento_pais_pais1">
+      <End Role="pais" EntitySet="pais" />
+      <End Role="evento_pais" EntitySet="evento_pais" />
+    </AssociationSet>
+    <AssociationSet Name="FK_material_pais_material" Association="PruebaModel.Store.FK_material_pais_material">
+      <End Role="material" EntitySet="material" />
+      <End Role="material_pais" EntitySet="material_pais" />
+    </AssociationSet>
+    <AssociationSet Name="FK_material_pais_pais" Association="PruebaModel.Store.FK_material_pais_pais">
+      <End Role="pais" EntitySet="pais" />
+      <End Role="material_pais" EntitySet="material_pais" />
+    </AssociationSet>
+    <AssociationSet Name="FK_paciente_doctor" Association="PruebaModel.Store.FK_paciente_doctor">
+      <End Role="doctor" EntitySet="doctor" />
+      <End Role="paciente" EntitySet="paciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_producto_padecimiento" Association="PruebaModel.Store.FK_producto_padecimiento">
+      <End Role="padecimiento" EntitySet="padecimiento" />
+      <End Role="producto" EntitySet="producto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_producto_pais_pais" Association="PruebaModel.Store.FK_producto_pais_pais">
+      <End Role="pais" EntitySet="pais" />
+      <End Role="producto_pais" EntitySet="producto_pais" />
+    </AssociationSet>
+    <AssociationSet Name="FK_producto_pais_producto" Association="PruebaModel.Store.FK_producto_pais_producto">
+      <End Role="producto" EntitySet="producto" />
+      <End Role="producto_pais" EntitySet="producto_pais" />
+    </AssociationSet>
+    <AssociationSet Name="FK_usuario_pais_pais" Association="PruebaModel.Store.FK_usuario_pais_pais">
+      <End Role="pais" EntitySet="pais" />
+      <End Role="usuario_pais" EntitySet="usuario_pais" />
+    </AssociationSet>
+    <AssociationSet Name="FK_usuario_pais_usuario" Association="PruebaModel.Store.FK_usuario_pais_usuario">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="usuario_pais" EntitySet="usuario_pais" />
+    </AssociationSet>
+    <AssociationSet Name="FK_usuario_rol" Association="PruebaModel.Store.FK_usuario_rol">
+      <End Role="rol" EntitySet="rol" />
+      <End Role="usuario" EntitySet="usuario" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="annales">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="descripcion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="autor" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="foto" Type="varbinary(max)" Nullable="false" />
+    <Property Name="documento" Type="varbinary(max)" Nullable="false" />
+    <Property Name="publicado" Type="int" Nullable="false" />
+    <Property Name="usuario_id" Type="int" />
+    <Property Name="fecha_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="articulo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="descripcion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="autor" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="categoria_id" Type="int" Nullable="false" />
+    <Property Name="foto" Type="varbinary(max)" Nullable="false" />
+    <Property Name="documento" Type="varbinary(max)" Nullable="false" />
+    <Property Name="publicado" Type="int" Nullable="false" />
+    <Property Name="usuario_id" Type="int" />
+    <Property Name="fecha_add" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Prueba.dbo.articulo_pais' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="articulo_pais">
+    <Key>
+      <PropertyRef Name="articulo_id" />
+      <PropertyRef Name="pais_id" />
+    </Key>
+    <Property Name="articulo_id" Type="int" Nullable="false" />
+    <Property Name="pais_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="categoria">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="descripcion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="publicado" Type="int" Nullable="false" />
+    <Property Name="usuario_id" Type="int" />
+    <Property Name="fecha_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="cita">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="paciente_id" Type="int" Nullable="false" />
+    <Property Name="hora_inicio" Type="datetime" Nullable="false" />
+    <Property Name="hora_final" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ciudad">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="estado_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="codigo">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="habilitado" Type="int" Nullable="false" />
+    <Property Name="pais_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="doctor">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="apellido" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="genero" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="fecha_nac" Type="datetime" Nullable="false" />
+    <Property Name="pais_id" Type="int" Nullable="false" />
+    <Property Name="ciudad_id" Type="int" />
+    <Property Name="telefono" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="especialidad_id" Type="int" Nullable="false" />
+    <Property Name="subespecialidad_id" Type="int" Nullable="false" />
+    <Property Name="residente" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="anio_residencia" Type="int" Nullable="false" />
+    <Property Name="consulta_institucion" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="institucion" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="consulta_privada" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="usuario_doctor_id" Type="int" Nullable="false" />
+    <Property Name="usuario_asistente_id" Type="int" Nullable="false" />
+    <Property Name="estado_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="especialidad">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="estado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="pais_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="etapa">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="etapa_pais">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="etapa_id" Type="int" Nullable="false" />
+    <Property Name="pais_id" Type="int" Nullable="false" />
+    <Property Name="descripcion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ruta_pdf" Type="varbinary(max)" Nullable="false" />
+    <Property Name="publicado" Type="int" />
+    <Property Name="usuario_id" Type="int" />
+    <Property Name="fecha_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="evento">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="descripcion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="fecha_inicio" Type="datetime" Nullable="false" />
+    <Property Name="fecha_fin" Type="datetime" Nullable="false" />
+    <Property Name="lugar" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="dirigido" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="foto" Type="varbinary(max)" Nullable="false" />
+    <Property Name="publicado" Type="int" Nullable="false" />
+    <Property Name="usuario_id" Type="int" />
+    <Property Name="fecha_add" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Prueba.dbo.evento_pais' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="evento_pais">
+    <Key>
+      <PropertyRef Name="evento_id" />
+      <PropertyRef Name="pais_id" />
+    </Key>
+    <Property Name="evento_id" Type="int" Nullable="false" />
+    <Property Name="pais_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="material">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="descripcion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="autor" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="foto" Type="varbinary(max)" Nullable="false" />
+    <Property Name="documento" Type="varbinary(max)" Nullable="false" />
+    <Property Name="publicado" Type="int" Nullable="false" />
+    <Property Name="usuario_id" Type="int" />
+    <Property Name="fecha_add" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Prueba.dbo.material_pais' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="material_pais">
+    <Key>
+      <PropertyRef Name="material_id" />
+      <PropertyRef Name="pais_id" />
+    </Key>
+    <Property Name="material_id" Type="int" Nullable="false" />
+    <Property Name="pais_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="nidito">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="descripcion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="autor" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="foto" Type="varbinary(max)" Nullable="false" />
+    <Property Name="documento" Type="varbinary(max)" Nullable="false" />
+    <Property Name="publicado" Type="int" Nullable="false" />
+    <Property Name="usuario_id" Type="int" />
+    <Property Name="fecha_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="paciente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="sexo" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="fecha_nac" Type="datetime" Nullable="false" />
+    <Property Name="lugar_nac" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="ciudad_nac" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="grupo_sanguineo" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="rh" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="alergico" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="nombre_madre" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="ocupacion_madre" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="nombre_padre" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="ocupacion_padre" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="calle" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="colonia" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ciudad" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="estado" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="cp" Type="int" Nullable="false" />
+    <Property Name="telefono" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="correo" Type="nvarchar" Nullable="false" MaxLength="70" />
+    <Property Name="nombre_encargado" Type="nvarchar" MaxLength="150" />
+    <Property Name="telefono_encargado" Type="nvarchar" MaxLength="50" />
+    <Property Name="notas" Type="nvarchar(max)" />
+    <Property Name="doctor_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="padecimiento">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="descripcion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="publicado" Type="int" Nullable="false" />
+    <Property Name="usuario_id" Type="int" />
+    <Property Name="fecha_add" Type="datetime" />
+  </EntityType>
+  <EntityType Name="pais">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="publicado" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="producto">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="descripcion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="padecimiento_id" Type="int" Nullable="false" />
+    <Property Name="foto" Type="varbinary(max)" Nullable="false" />
+    <Property Name="publicado" Type="int" Nullable="false" />
+    <Property Name="usuario_id" Type="int" />
+    <Property Name="fecha_add" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Prueba.dbo.producto_pais' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="producto_pais">
+    <Key>
+      <PropertyRef Name="producto_id" />
+      <PropertyRef Name="pais_id" />
+    </Key>
+    <Property Name="producto_id" Type="int" Nullable="false" />
+    <Property Name="pais_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="rol">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="tipo" Type="nvarchar" Nullable="false" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="subespecialidad">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="usuario" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="password" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="rol_id" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="habilitado" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Prueba.dbo.usuario_pais' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="usuario_pais">
+    <Key>
+      <PropertyRef Name="usuario_id" />
+      <PropertyRef Name="pais_id" />
+    </Key>
+    <Property Name="usuario_id" Type="int" Nullable="false" />
+    <Property Name="pais_id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_articulo_categoria">
+    <End Role="categoria" Type="PruebaModel.Store.categoria" Multiplicity="1" />
+    <End Role="articulo" Type="PruebaModel.Store.articulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="categoria">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="articulo">
+        <PropertyRef Name="categoria_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_articulo_pais_articulo">
+    <End Role="articulo" Type="PruebaModel.Store.articulo" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="articulo_pais" Type="PruebaModel.Store.articulo_pais" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="articulo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="articulo_pais">
+        <PropertyRef Name="articulo_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_articulo_pais_pais">
+    <End Role="pais" Type="PruebaModel.Store.pais" Multiplicity="1" />
+    <End Role="articulo_pais" Type="PruebaModel.Store.articulo_pais" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pais">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="articulo_pais">
+        <PropertyRef Name="pais_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_cita_paciente">
+    <End Role="paciente" Type="PruebaModel.Store.paciente" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="cita" Type="PruebaModel.Store.cita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="paciente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="cita">
+        <PropertyRef Name="paciente_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_doctor_ciudad">
+    <End Role="ciudad" Type="PruebaModel.Store.ciudad" Multiplicity="0..1" />
+    <End Role="doctor" Type="PruebaModel.Store.doctor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ciudad">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="doctor">
+        <PropertyRef Name="ciudad_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_doctor_especialidad">
+    <End Role="especialidad" Type="PruebaModel.Store.especialidad" Multiplicity="1" />
+    <End Role="doctor" Type="PruebaModel.Store.doctor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="especialidad">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="doctor">
+        <PropertyRef Name="especialidad_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_doctor_estado">
+    <End Role="estado" Type="PruebaModel.Store.estado" Multiplicity="1" />
+    <End Role="doctor" Type="PruebaModel.Store.doctor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estado">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="doctor">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_doctor_subespecialidad">
+    <End Role="subespecialidad" Type="PruebaModel.Store.subespecialidad" Multiplicity="1" />
+    <End Role="doctor" Type="PruebaModel.Store.doctor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="subespecialidad">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="doctor">
+        <PropertyRef Name="subespecialidad_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_doctor_usuario">
+    <End Role="usuario" Type="PruebaModel.Store.usuario" Multiplicity="1" />
+    <End Role="doctor" Type="PruebaModel.Store.doctor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="doctor">
+        <PropertyRef Name="usuario_doctor_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_doctor_usuario1">
+    <End Role="usuario" Type="PruebaModel.Store.usuario" Multiplicity="1" />
+    <End Role="doctor" Type="PruebaModel.Store.doctor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="doctor">
+        <PropertyRef Name="usuario_asistente_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_etapa_pais_etapa">
+    <End Role="etapa" Type="PruebaModel.Store.etapa" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="etapa_pais" Type="PruebaModel.Store.etapa_pais" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="etapa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="etapa_pais">
+        <PropertyRef Name="etapa_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_etapa_pais_pais">
+    <End Role="pais" Type="PruebaModel.Store.pais" Multiplicity="1" />
+    <End Role="etapa_pais" Type="PruebaModel.Store.etapa_pais" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pais">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="etapa_pais">
+        <PropertyRef Name="pais_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_evento_pais_evento1">
+    <End Role="evento" Type="PruebaModel.Store.evento" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="evento_pais" Type="PruebaModel.Store.evento_pais" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="evento">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="evento_pais">
+        <PropertyRef Name="evento_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_evento_pais_pais1">
+    <End Role="pais" Type="PruebaModel.Store.pais" Multiplicity="1" />
+    <End Role="evento_pais" Type="PruebaModel.Store.evento_pais" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pais">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="evento_pais">
+        <PropertyRef Name="pais_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_material_pais_material">
+    <End Role="material" Type="PruebaModel.Store.material" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="material_pais" Type="PruebaModel.Store.material_pais" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="material">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="material_pais">
+        <PropertyRef Name="material_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_material_pais_pais">
+    <End Role="pais" Type="PruebaModel.Store.pais" Multiplicity="1" />
+    <End Role="material_pais" Type="PruebaModel.Store.material_pais" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pais">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="material_pais">
+        <PropertyRef Name="pais_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_paciente_doctor">
+    <End Role="doctor" Type="PruebaModel.Store.doctor" Multiplicity="1" />
+    <End Role="paciente" Type="PruebaModel.Store.paciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="doctor">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="paciente">
+        <PropertyRef Name="doctor_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_producto_padecimiento">
+    <End Role="padecimiento" Type="PruebaModel.Store.padecimiento" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="producto" Type="PruebaModel.Store.producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="padecimiento">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="producto">
+        <PropertyRef Name="padecimiento_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_producto_pais_pais">
+    <End Role="pais" Type="PruebaModel.Store.pais" Multiplicity="1" />
+    <End Role="producto_pais" Type="PruebaModel.Store.producto_pais" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pais">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="producto_pais">
+        <PropertyRef Name="pais_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_producto_pais_producto">
+    <End Role="producto" Type="PruebaModel.Store.producto" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="producto_pais" Type="PruebaModel.Store.producto_pais" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="producto">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="producto_pais">
+        <PropertyRef Name="producto_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_usuario_pais_pais">
+    <End Role="pais" Type="PruebaModel.Store.pais" Multiplicity="1" />
+    <End Role="usuario_pais" Type="PruebaModel.Store.usuario_pais" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pais">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="usuario_pais">
+        <PropertyRef Name="pais_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_usuario_pais_usuario">
+    <End Role="usuario" Type="PruebaModel.Store.usuario" Multiplicity="1" />
+    <End Role="usuario_pais" Type="PruebaModel.Store.usuario_pais" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="usuario_pais">
+        <PropertyRef Name="usuario_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_usuario_rol">
+    <End Role="rol" Type="PruebaModel.Store.rol" Multiplicity="1" />
+    <End Role="usuario" Type="PruebaModel.Store.usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="rol">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="usuario">
+        <PropertyRef Name="rol_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,14 @@
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\SQLHelpers\bin\Release\SQLHelpers.dll
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\SQLHelpers\bin\Release\SQLHelpers.pdb
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\SQLHelpers\obj\Release\ResolveAssemblyReference.cache
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\SQLHelpers\obj\Release\SQLHelpers.dll
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\SQLHelpers\obj\Release\SQLHelpers.pdb
+C:\Users\Rodrigo\Desktop\Nestle\NestlePediatria\SQLHelpers\bin\Release\SQLHelpers.dll
+C:\Users\Rodrigo\Desktop\Nestle\NestlePediatria\SQLHelpers\bin\Release\SQLHelpers.pdb
+C:\Users\Rodrigo\Desktop\Nestle\NestlePediatria\SQLHelpers\obj\Release\SQLHelpers.dll
+C:\Users\Rodrigo\Desktop\Nestle\NestlePediatria\SQLHelpers\obj\Release\SQLHelpers.pdb
+D:\Rodrigo\_files\_rod\NestlePediatria\SQLHelpers\bin\Release\SQLHelpers.dll
+D:\Rodrigo\_files\_rod\NestlePediatria\SQLHelpers\bin\Release\SQLHelpers.pdb
+D:\Rodrigo\_files\_rod\NestlePediatria\SQLHelpers\obj\Release\ResolveAssemblyReference.cache
+D:\Rodrigo\_files\_rod\NestlePediatria\SQLHelpers\obj\Release\SQLHelpers.dll
+D:\Rodrigo\_files\_rod\NestlePediatria\SQLHelpers\obj\Release\SQLHelpers.pdb

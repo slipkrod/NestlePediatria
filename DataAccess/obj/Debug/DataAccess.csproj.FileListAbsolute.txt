@@ -1,0 +1,11 @@
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\bin\Debug\DataSource.dll
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\bin\Debug\Models.dll
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\bin\Debug\SQLHelpers.dll
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\bin\Debug\DataSource.pdb
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\bin\Debug\Models.pdb
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\bin\Debug\SQLHelpers.pdb
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\admin\Documents\Visual Studio 2010\Projects\NestlePediatria\DataAccess\obj\Debug\DataAccess.pdb

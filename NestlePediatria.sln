@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestlePediatria", "NestlePediatria\NestlePediatria.csproj", "{434333E5-1770-4033-9286-FCF577DCD9EB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{82A92942-7074-441B-B780-256F736AC727} = {82A92942-7074-441B-B780-256F736AC727}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSource", "DataSource\DataSource.csproj", "{3F99E1F5-BAAC-45DB-BCDA-623F2980CB78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{F68928D6-A138-422D-8A45-95705C7683BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{36D267CA-5050-4E48-8B0A-B8442D7C43B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLHelpers", "SQLHelpers\SQLHelpers.csproj", "{60D6DA0B-7229-4B68-A486-123D33ECD1E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestEntities", "RestEntities\RestEntities.csproj", "{82A92942-7074-441B-B780-256F736AC727}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{434333E5-1770-4033-9286-FCF577DCD9EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{434333E5-1770-4033-9286-FCF577DCD9EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{434333E5-1770-4033-9286-FCF577DCD9EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{434333E5-1770-4033-9286-FCF577DCD9EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F99E1F5-BAAC-45DB-BCDA-623F2980CB78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F99E1F5-BAAC-45DB-BCDA-623F2980CB78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F99E1F5-BAAC-45DB-BCDA-623F2980CB78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F99E1F5-BAAC-45DB-BCDA-623F2980CB78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F68928D6-A138-422D-8A45-95705C7683BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F68928D6-A138-422D-8A45-95705C7683BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F68928D6-A138-422D-8A45-95705C7683BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F68928D6-A138-422D-8A45-95705C7683BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36D267CA-5050-4E48-8B0A-B8442D7C43B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36D267CA-5050-4E48-8B0A-B8442D7C43B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36D267CA-5050-4E48-8B0A-B8442D7C43B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36D267CA-5050-4E48-8B0A-B8442D7C43B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60D6DA0B-7229-4B68-A486-123D33ECD1E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60D6DA0B-7229-4B68-A486-123D33ECD1E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60D6DA0B-7229-4B68-A486-123D33ECD1E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60D6DA0B-7229-4B68-A486-123D33ECD1E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82A92942-7074-441B-B780-256F736AC727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82A92942-7074-441B-B780-256F736AC727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82A92942-7074-441B-B780-256F736AC727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82A92942-7074-441B-B780-256F736AC727}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
