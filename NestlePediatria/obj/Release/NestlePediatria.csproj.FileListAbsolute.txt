@@ -24,3 +24,12 @@ D:\Rodrigo\_files\_rod\NestlePediatria\NestlePediatria\bin\EntityFramework.xml
 D:\Rodrigo\_files\_rod\NestlePediatria\NestlePediatria\obj\Release\ResolveAssemblyReference.cache
 D:\Rodrigo\_files\_rod\NestlePediatria\NestlePediatria\obj\Release\NestlePediatria.dll
 D:\Rodrigo\_files\_rod\NestlePediatria\NestlePediatria\obj\Release\NestlePediatria.pdb
+C:\Users\Rodrigo\Documents\Proyectos\Nestle\NestlePediatria\NestlePediatria\bin\NestlePediatria.dll
+C:\Users\Rodrigo\Documents\Proyectos\Nestle\NestlePediatria\NestlePediatria\bin\NestlePediatria.pdb
+C:\Users\Rodrigo\Documents\Proyectos\Nestle\NestlePediatria\NestlePediatria\bin\EntityFramework.dll
+C:\Users\Rodrigo\Documents\Proyectos\Nestle\NestlePediatria\NestlePediatria\bin\RestEntities.dll
+C:\Users\Rodrigo\Documents\Proyectos\Nestle\NestlePediatria\NestlePediatria\bin\RestEntities.pdb
+C:\Users\Rodrigo\Documents\Proyectos\Nestle\NestlePediatria\NestlePediatria\bin\EntityFramework.xml
+C:\Users\Rodrigo\Documents\Proyectos\Nestle\NestlePediatria\NestlePediatria\obj\Release\NestlePediatria.csprojResolveAssemblyReference.cache
+C:\Users\Rodrigo\Documents\Proyectos\Nestle\NestlePediatria\NestlePediatria\obj\Release\NestlePediatria.dll
+C:\Users\Rodrigo\Documents\Proyectos\Nestle\NestlePediatria\NestlePediatria\obj\Release\NestlePediatria.pdb

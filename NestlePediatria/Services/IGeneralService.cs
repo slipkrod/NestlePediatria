@@ -32,6 +32,9 @@ namespace Rest.Services
         [WebGet(UriTemplate = "MealPlanner/GetPdf/{id}")]
         Stream ObtenPdfMealPlanner(string id);
 
+        [WebGet(UriTemplate = "MealPlanner/GetPdf/{pais_id}/{etapa_id}")]
+        Stream ObtenPdfMealPlanner(string pais_id, string etapa_id);
+
         [WebGet(UriTemplate = "Product/GetImage/{id}")]
         Stream ObtenImagenProducto(string id);
 

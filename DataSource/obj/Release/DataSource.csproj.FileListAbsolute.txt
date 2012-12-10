@@ -12,3 +12,7 @@ D:\Rodrigo\_files\_rod\NestlePediatria\DataSource\bin\Release\DataSource.pdb
 D:\Rodrigo\_files\_rod\NestlePediatria\DataSource\obj\Release\ResolveAssemblyReference.cache
 D:\Rodrigo\_files\_rod\NestlePediatria\DataSource\obj\Release\DataSource.dll
 D:\Rodrigo\_files\_rod\NestlePediatria\DataSource\obj\Release\DataSource.pdb
+C:\Users\Rodrigo\Documents\Proyectos\Nestle\NestlePediatria\DataSource\bin\Release\DataSource.dll
+C:\Users\Rodrigo\Documents\Proyectos\Nestle\NestlePediatria\DataSource\bin\Release\DataSource.pdb
+C:\Users\Rodrigo\Documents\Proyectos\Nestle\NestlePediatria\DataSource\obj\Release\DataSource.dll
+C:\Users\Rodrigo\Documents\Proyectos\Nestle\NestlePediatria\DataSource\obj\Release\DataSource.pdb

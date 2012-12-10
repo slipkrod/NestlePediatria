@@ -118,6 +118,30 @@ namespace Rest.Services
             return subespecialidades;
         }
 
+        public Stream ObtenPdfMealPlanner(string pais_id, string etapa_id)
+        {
+            int paisId = 0;
+            Int32.TryParse(pais_id, out paisId);
+
+            int etapaId = 0;
+            Int32.TryParse(etapa_id, out etapaId);
+
+            var _context = new PruebaEntities();
+
+            if (paisId > 0 && etapaId>0)
+            {
+
+                etapa_pais mealEntity = (from a in _context.etapa_pais where a.pais_id == paisId && a.etapa_id==etapaId select a).FirstOrDefault();
+                if (mealEntity != null)
+                {
+                    WebOperationContext.Current.OutgoingResponse.ContentType = "application/pdf";
+                    return new MemoryStream(mealEntity.ruta_pdf);
+                }
+            }
+
+            return null;
+        }
+
         public Stream ObtenPdfMealPlanner(string id)
         {
             int mealId = 0;

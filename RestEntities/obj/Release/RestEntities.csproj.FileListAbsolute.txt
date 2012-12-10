@@ -7,3 +7,7 @@ D:\Rodrigo\_files\_rod\NestlePediatria\RestEntities\bin\Release\RestEntities.pdb
 D:\Rodrigo\_files\_rod\NestlePediatria\RestEntities\obj\Release\ResolveAssemblyReference.cache
 D:\Rodrigo\_files\_rod\NestlePediatria\RestEntities\obj\Release\RestEntities.dll
 D:\Rodrigo\_files\_rod\NestlePediatria\RestEntities\obj\Release\RestEntities.pdb
+C:\Users\Rodrigo\Documents\Proyectos\Nestle\NestlePediatria\RestEntities\bin\Release\RestEntities.dll
+C:\Users\Rodrigo\Documents\Proyectos\Nestle\NestlePediatria\RestEntities\bin\Release\RestEntities.pdb
+C:\Users\Rodrigo\Documents\Proyectos\Nestle\NestlePediatria\RestEntities\obj\Release\RestEntities.dll
+C:\Users\Rodrigo\Documents\Proyectos\Nestle\NestlePediatria\RestEntities\obj\Release\RestEntities.pdb
